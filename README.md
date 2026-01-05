@@ -21,7 +21,7 @@ Extracts the **40 single-copy universal marker genes** (described in Ciccarelli 
 fetchMGs extraction nonredundant_genes.faa gene single_copy_genes
 ```
 
-Extracts the 10 single-copy universal marker genes suitable for metagenomes (described in Alessio et al., Nature Communications, 2019):
+Extracts the 10 single-copy universal marker genes suitable for metagenomes (described in Alessio *et al.*, *Nature Communications*, 2019):
 COG0012, COG0016, COG0018, COG0172, COG0215, COG0495, COG0525, COG0533, COG0541, COG0552
 ```bash
 cd single_copy_genes
