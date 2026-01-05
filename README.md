@@ -16,12 +16,12 @@ Ratified sequences of enzymes involved in DMSP, DMS and MeSH metabolism.
 
 
 ## Identification of 10 single copy genes for relative abundance normalization
-Extracts the **40 single-copy universal marker genes** (described in Ciccarelli *et al.*, *Science*, 2006 and Sorek *et al.*, *Science*, 2007) from metagenomes using [fetchMGs](https://github.com/motu-tool/FetchMGs).
+Extracts the 40 single-copy universal marker genes (described in Ciccarelli *et al.*, *Science*, 2006 and Sorek *et al.*, *Science*, 2007) from metagenomes using [fetchMGs](https://github.com/motu-tool/FetchMGs).
 ```bash
 fetchMGs extraction nonredundant_genes.faa gene single_copy_genes
 ```
 
-Extracts the 10 single-copy universal marker genes suitable for metagenomes (described in Alessio *et al.*, *Nature Communications*, 2019):
+Select a subset of 10 single-copy universal marker genes that suitable for metagenomes (described in Alessio *et al.*, *Nature Communications*, 2019):
 COG0012, COG0016, COG0018, COG0172, COG0215, COG0495, COG0525, COG0533, COG0541, COG0552
 ```bash
 cd single_copy_genes
