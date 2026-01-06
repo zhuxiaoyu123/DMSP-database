@@ -34,9 +34,11 @@ Using dddP as an example:
 ```bash
 #prefilter by hmm
 hmmsearch --noali -E 30 --tblout dddP_hmm.out dddP.hmm nonredundant_genes.faa
+
 #get hits from hmm results
 grep -v "^#" dddP_hmm.out | awk '{print $1}' > dddP.prefilter.genelist
 seqkit grep -f dddP.prefilter.genelist nonredundant_genes.faa > dddP.prefilter.faa
+
 #further filter by blastp (identity >= 40%; coverage >= 70%)
 diamond blastp \
   --db  dddP.dmnd\
@@ -48,7 +50,7 @@ diamond blastp \
   --subject-cover 70 \
   --query-cover 70
 ```
-Other genes with only one ratified sequences are identified by direct blastp
+Other genes with only one ratified sequence are identified by direct blastp.
 Using SAR11_1336 as am example:
 ```bash
 diamond blastp \
