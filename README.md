@@ -50,8 +50,8 @@ diamond blastp \
   --subject-cover 70 \
   --query-cover 70
 
-#Notably, dmdA needs to be further filtered because its high similarity to non-dmdA hits from the same GcvT family. Thus, a phylogenetic tree is applied to remove hits clustered with known non-dmdA genes.
-#Outgroup (sarcosine oxidase) and non-dmdA sequences are stored in Non-dmdA.faa.
+#Notably, dmdA requires additional filtering because of its high sequence similarity to non-dmdA genes within the same GcvT family. Therefore, a phylogenetic approach was applied to distinguish true dmdA from related homologs, and to remove sequences clustering with known non-dmdA genes.
+#Outgroup (sarcosine oxidase) and known non-dmdA sequences used for tree construction are provided in Non-dmdA.faa.
 
 ```
 Other genes with only one ratified sequence are identified by direct blastp.
