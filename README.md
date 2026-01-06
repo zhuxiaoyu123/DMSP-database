@@ -31,7 +31,7 @@ megL gene is identified by KEGG (K01761):
 hmmsearch --noali -T 502.37 --tblout megL_hmm.out megL-K01761.hmm nonredundant_genes.faa
 ```
 Other genes with two or more ratified sequences are identified by combining hmmsearch and blastp.
-Using dddP as am example:
+Using dddP as an example:
 ```bash
 #prefilter by hmm
 hmmsearch --noali -E 30 --tblout dddP_hmm.out dddP.hmm nonredundant_genes.faa
@@ -40,7 +40,7 @@ grep -v "^#" dddP_hmm.out | awk '{print $1}' > dddP.prefilter.genelist
 seqkit grep -f dddP.prefilter.genelist nonredundant_genes.faa > dddP.prefilter.faa
 #further filter by blastp (identity >= 40%; coverage >= 70%)
 diamond blastp \
-  --db  \
+  --db  dddP.dmnd\
   --query dddP.prefilter.faa \
   --out dddP.id40_cov70.out \
   --outfmt 6 \
@@ -53,7 +53,7 @@ Other genes with only one ratified sequences are identified by direct blastp
 Using SAR11_1336 as am example:
 ```bash
 diamond blastp \
-  --db  \
+  --db  SAR_1336.dmnd \
   --query nonredundant_genes.faa \
   --out SAR11_1336.id40_cov70.out \
   --outfmt 6 \
