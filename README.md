@@ -1,6 +1,6 @@
 # DMSP-database (Ratified sequences of enzymes involved in DMSP, DMS and MeSH metabolism)
 
-## The roles and environmental importance of dimethylsulfoniopropionate (DMSP)
+## The roles and environmental importance of DMSP
 <img width="1026" height="792" alt="Screenshot 2025-09-12 at 12 19 17" src="https://github.com/user-attachments/assets/de6eb6ff-6ef5-492c-b893-1e01ddaf673a" />
 
 
