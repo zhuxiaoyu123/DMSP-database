@@ -19,7 +19,6 @@ fetchMGs extraction nonredundant_genes.faa gene single_copy_genes
 ```
 
 Select a subset of 10 single-copy universal marker genes that suitable for metagenomes (described in Alessio *et al.*, *Nature Communications*, 2019):
-COG0012, COG0016, COG0018, COG0172, COG0215, COG0495, COG0525, COG0533, COG0541, COG0552
 ```bash
 cd single_copy_genes
 seqkit seq -n *fetchMGs.faa | grep -E "COG0012|COG0016|COG0018|COG0172|COG0215|COG0495|COG0525|COG0533|COG0541|COG0552" > single_copy_genes.list
