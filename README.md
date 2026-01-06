@@ -1,5 +1,4 @@
-# DMSP-database
-Ratified sequences of enzymes involved in DMSP, DMS and MeSH metabolism.
+# DMSP-database (Ratified sequences of enzymes involved in DMSP, DMS and MeSH metabolism)
 
 ## The roles and environmental importance of dimethylsulfoniopropionate (DMSP)
 <img width="1026" height="792" alt="Screenshot 2025-09-12 at 12 19 17" src="https://github.com/user-attachments/assets/de6eb6ff-6ef5-492c-b893-1e01ddaf673a" />
@@ -11,8 +10,6 @@ Ratified sequences of enzymes involved in DMSP, DMS and MeSH metabolism.
 
 ## DMSP degradation pathways
 <img width="659" height="769" alt="image" src="https://github.com/user-attachments/assets/54aae1c5-48a6-4f56-a9cc-bbdbe7e78dd6" />
-
-
 
 
 ## Identification of 10 single copy genes for relative abundance normalization
@@ -27,3 +24,11 @@ COG0012, COG0016, COG0018, COG0172, COG0215, COG0495, COG0525, COG0533, COG0541,
 cd single_copy_genes
 seqkit seq -n *fetchMGs.faa | grep -E "COG0012|COG0016|COG0018|COG0172|COG0215|COG0495|COG0525|COG0533|COG0541|COG0552" > single_copy_genes.list
 ```
+
+## Identification of DMSP/DMS/MeSH metabolism related genes
+megL gene is identified by KEGG (K01761)
+```bash
+hmmsearch --noali -T 502.37 --tblout megL_hmm.out megL.hmm nonredundant_genes.faa
+```
+
+
