@@ -26,9 +26,39 @@ seqkit seq -n *fetchMGs.faa | grep -E "COG0012|COG0016|COG0018|COG0172|COG0215|C
 ```
 
 ## Identification of DMSP/DMS/MeSH metabolism related genes
-megL gene is identified by KEGG (K01761)
+megL gene is identified by KEGG (K01761):
 ```bash
-hmmsearch --noali -T 502.37 --tblout megL_hmm.out megL.hmm nonredundant_genes.faa
+hmmsearch --noali -T 502.37 --tblout megL_hmm.out megL-K01761.hmm nonredundant_genes.faa
 ```
-
+Other genes with two or more ratified sequences are identified by combining hmmsearch and blastp.
+Using dddP as am example:
+```bash
+#prefilter by hmm
+hmmsearch --noali -E 30 --tblout dddP_hmm.out dddP.hmm nonredundant_genes.faa
+#get hits from hmm results
+grep -v "^#" dddP_hmm.out | awk '{print $1}' > dddP.prefilter.genelist
+seqkit grep -f dddP.prefilter.genelist nonredundant_genes.faa > dddP.prefilter.faa
+#further filter by blastp (identity >= 40%; coverage >= 70%)
+diamond blastp \
+  --db  \
+  --query dddP.prefilter.faa \
+  --out dddP.id40_cov70.out \
+  --outfmt 6 \
+  --max-target-seqs 1 \
+  --id 40 \ 
+  --subject-cover 70 \
+  --query-cover 70
+```
+Other genes with only one ratified sequences are identified by direct blastp
+```bash
+diamond blastp \
+  --db  \
+  --query dddP.prefilter.faa \
+  --out dddP.id40_cov70.out \
+  --outfmt 6 \
+  --max-target-seqs 1 \
+  --id 40 \  #For TpMMT, higher identity cutoff (id=60) is used.
+  --subject-cover 70 \
+  --query-cover 70
+```
 
