@@ -50,11 +50,12 @@ diamond blastp \
   --query-cover 70
 ```
 Other genes with only one ratified sequences are identified by direct blastp
+Using SAR11_1336 as am example:
 ```bash
 diamond blastp \
   --db  \
-  --query dddP.prefilter.faa \
-  --out dddP.id40_cov70.out \
+  --query nonredundant_genes.faa \
+  --out SAR11_1336.id40_cov70.out \
   --outfmt 6 \
   --max-target-seqs 1 \
   --id 40 \  #For TpMMT, higher identity cutoff (id=60) is used.
