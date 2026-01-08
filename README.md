@@ -12,17 +12,7 @@
 <img width="659" height="769" alt="image" src="https://github.com/user-attachments/assets/54aae1c5-48a6-4f56-a9cc-bbdbe7e78dd6" />
 
 
-## Identification of 10 single copy genes for relative abundance normalization
-Extracts the 40 single-copy universal marker genes (described in Ciccarelli *et al.*, *Science*, 2006 and Sorek *et al.*, *Science*, 2007) from metagenomes using [fetchMGs](https://github.com/motu-tool/FetchMGs).
-```bash
-fetchMGs extraction nonredundant_genes.faa gene single_copy_genes
-```
 
-Select a subset of 10 single-copy universal marker genes that suitable for metagenomes (described in Alessio *et al.*, *Nature Communications*, 2019):
-```bash
-cd single_copy_genes
-seqkit seq -n *fetchMGs.faa | grep -E "COG0012|COG0016|COG0018|COG0172|COG0215|COG0495|COG0525|COG0533|COG0541|COG0552" > single_copy_genes.list
-```
 
 ## Identification of DMSP/DMS/MeSH metabolism related genes
 megL gene is identified by KEGG (K01761):
