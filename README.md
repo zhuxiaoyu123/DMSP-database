@@ -16,7 +16,7 @@
 
 
 ## Identification of DMSP/DMS/MeSH metabolism related genes
-megL gene (K01761) is identified by (BlastKOALA)[https://www.kegg.jp/blastkoala/].
+megL gene (K01761) is identified by [BlastKOALA](https://www.kegg.jp/blastkoala/).
 
 Genes with two or more ratified sequences are identified by combining hmmsearch and blastp.
 Using dddP as an example:
