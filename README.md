@@ -11,6 +11,8 @@
 ## DMSP degradation pathways
 <img width="659" height="769" alt="image" src="https://github.com/user-attachments/assets/54aae1c5-48a6-4f56-a9cc-bbdbe7e78dd6" />
 
+## DMS and MeSH metabolism
+<img width="1021" height="278" alt="image" src="https://github.com/user-attachments/assets/d9018553-8fb5-4a87-bad8-0240471866cd" />
 
 
 ## Identification of DMSP/DMS/MeSH metabolism related genes
