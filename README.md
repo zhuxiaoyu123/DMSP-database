@@ -18,7 +18,7 @@
 ## Identification of DMSP/DMS/MeSH metabolism related genes
 megL gene (K01761) is identified by the KEGG database.
 ```bash
-    hmmsearch --noali -T 502.37 --tblout megL_hmm.tbl megL-K01761.hmm nonredundant_genes.faa
+hmmsearch --noali -T 502.37 --tblout megL_hmm.tbl megL-K01761.hmm nonredundant_genes.faa
 ```
 Genes with two or more ratified sequences are identified by combining hmmsearch and blastp.
 Using dddP as an example:
