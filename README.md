@@ -1,18 +1,7 @@
-# DMSP-database (Ratified sequences of enzymes involved in DMSP, DMS and MeSH metabolism)
-
-## The roles and environmental importance of DMSP
-<img width="1026" height="792" alt="Screenshot 2025-09-12 at 12 19 17" src="https://github.com/user-attachments/assets/de6eb6ff-6ef5-492c-b893-1e01ddaf673a" />
-
-
-## DMSP synthesis pathways
-<img width="571" height="770" alt="image" src="https://github.com/user-attachments/assets/146025fa-a7e2-4429-b027-f2d51341f2c6" />
-
-
-## DMSP degradation pathways
-<img width="659" height="769" alt="image" src="https://github.com/user-attachments/assets/54aae1c5-48a6-4f56-a9cc-bbdbe7e78dd6" />
-
-## DMS and MeSH metabolism
-<img width="1021" height="278" alt="image" src="https://github.com/user-attachments/assets/d9018553-8fb5-4a87-bad8-0240471866cd" />
+# DMSP-database
+## Enzymes involved in DMSP, DMS and MeSH metabolism
+<img width="1019" height="692" alt="image" src="https://github.com/user-attachments/assets/1e52b3d2-75eb-4c9b-8480-c3a2baef9b9b" />
+<img width="801" height="938" alt="image" src="https://github.com/user-attachments/assets/c1eaaa62-4f37-4579-9c93-bf3a09e06548" />
 
 
 ## Identification of DMSP/DMS/MeSH metabolism related genes
