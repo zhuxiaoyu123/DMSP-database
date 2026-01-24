@@ -27,10 +27,6 @@ diamond blastp \
   --id 40 \ 
   --subject-cover 70 \
   --query-cover 70
-
-#Notably, dmdA requires additional filtering because of its high sequence similarity to non-dmdA genes within the same GcvT family. Therefore, a phylogenetic approach was applied to distinguish true dmdA from related homologs, and to remove sequences clustering with known non-dmdA genes.
-#Outgroup (sarcosine oxidase) and known non-dmdA sequences used for tree construction are provided in Non-dmdA.faa.
-
 ```
 Other genes with only one ratified sequence are identified by direct blastp.
 Using SAR11_1336 as am example:
@@ -41,8 +37,9 @@ diamond blastp \
   --out SAR11_1336.id40_cov70.out \
   --outfmt 6 \
   --max-target-seqs 1 \
-  --id 40 \  #For TpMMT, higher identity cutoff (id=60) is used.
+  --id 40 \
   --subject-cover 70 \
   --query-cover 70
 ```
+
 
