@@ -41,5 +41,6 @@ diamond blastp \
   --subject-cover 70 \
   --query-cover 70
 ```
+For DmdA, DddD, DddK, DddP, DsyB, MddH and TpMMT, phylogenetic trees were respectively constructed to remove the homologues that clustered with non-functional sequences.
 
 
