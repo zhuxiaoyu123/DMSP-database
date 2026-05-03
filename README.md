@@ -1,2 +1,2 @@
 # DMSP-database
-DMSP/DMS/MeSH metabolism-related gene database
+Database of DMSP/DMS/MeSH metabolism-related genes
