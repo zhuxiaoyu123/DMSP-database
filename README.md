@@ -63,10 +63,10 @@
 | MeSH to DMS | mddH | prokaryotic | custom database |
 | MeSH to DMS | mddM1 | prokaryotic | custom database |
 | MeSH to DMS | mddM2 | prokaryotic | custom database |
-| DMS to Coenzyme-M | mtsAB | prokaryotic | K16954 (mtsA) |
-| DMS to Coenzyme-M | mtsD | prokaryotic | custom database |
-| DMS to Coenzyme-M | mtsF | prokaryotic | custom database |
-| DMS to Coenzyme-M | mtsH | prokaryotic | custom database |
+| DMS to CH4 | mtsAB | prokaryotic | K16954 (mtsA) |
+| DMS to CH4 | mtsD | prokaryotic | custom database |
+| DMS to CH4 | mtsF | prokaryotic | custom database |
+| DMS to CH4 | mtsH | prokaryotic | custom database |
 
 Genes assigned with KEGG Orthology (KO) categories are annotated by the online KEGG server [BlastKOALA](https://www.kegg.jp/blastkoala/)
  or the local tool [kofam_scan](https://github.com/takaram/kofam_scan).<br>
