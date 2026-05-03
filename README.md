@@ -90,8 +90,11 @@ diamond blastp \
 
 For DmdA-like, DddK, MddH, and TpMMT, a set of previously identified non-homologous was included as negative reference sequences in the BLASTP search to help distinguish true hits from closely related non-target genes.
 ```
-> ⚠️ **Note:** DmdA was first identified in Ruegeria pomeroyi (https://www.science.org/doi/10.1126/science.1130657) and is assigned to K17486. More recently, functional dmdA-like genes have been reported in SAR92 (https://journals.asm.org/doi/10.1128/mbio.01467-23), as well as in Vibrio and Psychrobacter (https://journals.asm.org/doi/10.1128/aem.01806-21). The SAR92 dmdA-like sequences cannot be annotated by BlastKOALA, whereas the dmdA-like genes from Vibrio and Psychrobacter are assigned to K00605 (gcvT / AMT, glycine cleavage system T protein, aminomethyltransferase). Additionally, between the canonical DmdA clade and these newly reported dmdA-like sequences, the phylogenetic tree contains several previously described non-dmdA genes. These together indicate these newly reported dmdA-like sequences are substantially diverged from the canonical Ruegeria DmdA. Therefore, individual BLASTP screening are applied for these dmdA-like genes. <br>
-<img width="703" height="451" alt="image" src="https://github.com/user-attachments/assets/e8331b10-cd77-4df1-9d3a-00c48fb801a2" />
+> ⚠️ **Note:** DmdA was first identified in Ruegeria pomeroyi (https://www.science.org/doi/10.1126/science.1130657) and is assigned to K17486. More recently, functional dmdA-like genes have been reported in SAR92 (https://journals.asm.org/doi/10.1128/mbio.01467-23), as well as in Vibrio and Psychrobacter (https://journals.asm.org/doi/10.1128/aem.01806-21). The SAR92 dmdA-like sequences cannot be annotated by BlastKOALA, whereas the dmdA-like genes from Vibrio and Psychrobacter are assigned to K00605 (gcvT / AMT, glycine cleavage system T protein, aminomethyltransferase). Additionally, between the canonical DmdA clade and these newly reported dmdA-like sequences, the phylogenetic tree contains several previously described non-dmdA genes. These together indicate these newly reported dmdA-like sequences are substantially diverged from the canonical Ruegeria DmdA. Therefore, individual BLASTP screening are applied for these dmdA-like genes.
+
+<br>
+<img width="668" height="315" alt="image" src="https://github.com/user-attachments/assets/e4d331af-9835-4bea-bb85-43521d8e5535" />
+
 
 
 
