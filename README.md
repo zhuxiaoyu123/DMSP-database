@@ -2,9 +2,18 @@
 Database of DMSP/DMS/MeSH metabolism-related genes
 
 ## Enzymes involved in DMSP, DMS and MeSH metabolism
-<img width="1019" height="692" alt="image" src="https://github.com/user-attachments/assets/1e52b3d2-75eb-4c9b-8480-c3a2baef9b9b" />
-<img width="1050" height="1256" alt="image" src="https://github.com/user-attachments/assets/3aadf3c7-0c31-403c-b4b9-c0774ce06ad2" />
-*AcuH is also known as AcuK
+<img width="1052" height="716" alt="image" src="https://github.com/user-attachments/assets/9a410f77-1a9f-4744-a422-91285e71595f" />
+
+- In *Burkholderia thailandensis*, **BurB** is responsible for producing DMSP, which serves as a precursor for virulence-associated compounds.
+
+<br>
+
+<img width="1118" height="1334" alt="image" src="https://github.com/user-attachments/assets/0a8ea19b-b2a6-4e22-9189-5b06cdeb952d" />
+
+
+- **AcuH** is also known as **AcuK**.
+
+---
 
 
 ## Identification of DMSP/DMS/MeSH metabolism related genes
@@ -19,6 +28,7 @@ Database of DMSP/DMS/MeSH metabolism-related genes
 | Met to DMSP | dsyGD | prokaryotic | K28065 |
 | Met to DMSP | mmtN | prokaryotic | K28064 |
 | Met to DMSP | TpMMT | eukaryotic | custom database |
+| Met to DMSP | MMT | eukaryotic (plant) | custom database |
 | DMSP transporter | dmpX | prokaryotic | custom database |
 | DMSP transporter | SAR11_1336 | prokaryotic | custom database |
 | DMSP transporter | BCCT | prokaryotic | TCDB database |
@@ -67,7 +77,7 @@ BCCT family transporter genes are identified by [TCDB](https://www.tcdb.org/).<b
 The remaining genes are identified by blasting against custom databases built with ratified sequences.
 Using dddK as an example:
 ```bash
-#blastp (identity >= 40%; query coverage >= 70%; subject coverage >= 50%)
+#blastp (identity >= 40%; query coverage >= 70%; subject coverage >= 70%)
 diamond blastp \
   --db  dddK.dmnd\
   --query dddK.prefilter.faa \
@@ -75,7 +85,7 @@ diamond blastp \
   --outfmt 6 \
   --max-target-seqs 1 \
   --id 40 \ 
-  --subject-cover 50 \
+  --subject-cover 70 \
   --query-cover 70
 
 For DmdA-like, DddK, MddH, and TpMMT, a set of previously identified non-homologous was included as negative reference sequences in the BLASTP search to help distinguish true hits from closely related non-target genes.
