@@ -1,5 +1,4 @@
-# DMSP-database
-Database of DMSP/DMS/MeSH metabolism-related genes
+# Database of DMSP/DMS/MeSH metabolism-related genes
 
 ## Enzymes involved in DMSP, DMS and MeSH metabolism
 <img width="1052" height="716" alt="image" src="https://github.com/user-attachments/assets/9a410f77-1a9f-4744-a422-91285e71595f" />
