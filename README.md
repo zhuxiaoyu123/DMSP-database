@@ -69,9 +69,8 @@ Database of DMSP/DMS/MeSH metabolism-related genes
 | DMS to Coenzyme-M | mtsF | prokaryotic | custom database |
 | DMS to Coenzyme-M | mtsH | prokaryotic | custom database |
 
-Genes with related KO categories are annotated by KEGG [BlastKOALA](https://www.kegg.jp/blastkoala/).<br>
-
-> ⚠️ **Note:** Although KofamScan may be more convenient for local analyses, its stringent thresholds can lead to fragmented proteins being missed, which are common in metagenomic and metatranscriptomic datasets. Based on my testing, *BlastKOALA* does not appear to have this issue and is therefore recommended.<br>
+Genes assigned with KEGG Orthology (KO) categories are annotated by the online KEGG server [BlastKOALA](https://www.kegg.jp/blastkoala/)
+ or the local tool [kofam_scan] (https://github.com/takaram/kofam_scan).<br>
 
 BCCT family transporter genes are identified by [TCDB](https://www.tcdb.org/).<br>
 The remaining genes are identified by blasting against custom databases built with ratified sequences.
