@@ -72,18 +72,18 @@ If you use this database, please cite: Predicted shifts in bacterial and algal c
 | DMS to CH4 | mtsF | prokaryotic | custom database |
 | DMS to CH4 | mtsH | prokaryotic | custom database |
 
-Genes assigned with KEGG Orthology (KO) categories are annotated by the online KEGG server [BlastKOALA](https://www.kegg.jp/blastkoala/)
- or the local tool [kofam_scan](https://github.com/takaram/kofam_scan).<br>
+Genes assigned with KEGG Orthology (KO) categories (05.kegg_KO_list) are annotated by the online KEGG server [BlastKOALA](https://www.kegg.jp/blastkoala/)
+ or the local tool [kofam_scan](https://github.com/takaram/kofam_scan).For these genes, we also provide reference protein sequences, which can be used for rapid homology searches in your own datasets. <br>
  > ⚠️ **Note:** BlastKOALA has a better performance on fragemented proteins, which are commonly found in metatranscriptomes.
 
 
 BCCT family transporter genes are identified by [TCDB](https://www.tcdb.org/).<br>
-The remaining genes are identified by blasting against custom databases built with ratified sequences. For DmdA_like, DddK, MddH, and TpMMT, a set of previously identified non-homologous was included as negative reference sequences in the BLASTP search to help distinguish true hits from closely related non-target genes.
+The remaining genes are identified by blasting against custom databases built with ratified sequences (06.custom_diamond_db). For DmdA_like, DddK, MddH, and TpMMT, a set of previously identified non-homologous was included as negative reference sequences in the BLASTP search to help distinguish true hits from closely related non-target genes.
 
 ```bash
-#blastp (identity >= 40%; query coverage >= 70%; subject coverage >= 70%)
+#diamond blastp (identity >= 40%; query coverage >= 70%; subject coverage >= 70%)
 diamond blastp \
-  --db  DMSP_database.dmnd\
+  --db Diamond_reference_proteins.dmnd \
   --query nonredundant_genes.faa \
   --out dddK.id40_cov70.out \
   --outfmt 6 \
