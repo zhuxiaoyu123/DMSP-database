@@ -1,0 +1,18 @@
+Met to DMSP	burB	prokaryotic	custom database
+Met to DMSP	DSYB	eukaryotic	custom database
+Met to DMSP	dsyG	prokaryotic	custom database
+Met to DMSP	TpMMT	eukaryotic	custom database
+Met to DMSP	MMT	eukaryotic (plant)	custom database
+DMSP transporter	dmpX	prokaryotic	custom database
+DMSP transporter	SAR11_1336	prokaryotic	custom database
+DMSP to DMS	Alma	eukaryotic	custom database
+DMSP to DMS	dddK	prokaryotic	custom database
+DMSP to DMS	dddU	prokaryotic	custom database
+DMSP to MMPA	dmdA_like	prokaryotic	custom database
+MeSH to DMS	mddH	prokaryotic	custom database
+MeSH to DMS	mddM1	prokaryotic	custom database
+MeSH to DMS	mddM2	prokaryotic	custom database
+DMS to CH4	mtsD	prokaryotic	custom database
+DMS to CH4	mtsF	prokaryotic	custom database
+DMS to CH4	mtsH	prokaryotic	custom database
+DMS to DMSO	dsoABCDEF	prokaryotic	custom database (dsoB)
