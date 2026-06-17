@@ -10,7 +10,7 @@ If you use this database, please cite: Predicted shifts in bacterial and algal c
 
 <br>
 
-<img width="1118" height="1334" alt="image" src="https://github.com/user-attachments/assets/0a8ea19b-b2a6-4e22-9189-5b06cdeb952d" />
+<img width="570" height="586" alt="image" src="https://github.com/user-attachments/assets/e3be72d1-d636-4105-8173-7331744688ef" />
 
 
 - **AcuH** is also known as **AcuK**.
@@ -77,21 +77,19 @@ Genes assigned with KEGG Orthology (KO) categories are annotated by the online K
 
 
 BCCT family transporter genes are identified by [TCDB](https://www.tcdb.org/).<br>
-The remaining genes are identified by blasting against custom databases built with ratified sequences.
-Using dddK as an example:
+The remaining genes are identified by blasting against custom databases built with ratified sequences. For DmdA_like, DddK, MddH, and TpMMT, a set of previously identified non-homologous was included as negative reference sequences in the BLASTP search to help distinguish true hits from closely related non-target genes.
+
 ```bash
 #blastp (identity >= 40%; query coverage >= 70%; subject coverage >= 70%)
 diamond blastp \
-  --db  dddK.dmnd\
-  --query dddK.prefilter.faa \
+  --db  DMSP_database.dmnd\
+  --query nonredundant_genes.faa \
   --out dddK.id40_cov70.out \
   --outfmt 6 \
   --max-target-seqs 1 \
   --id 40 \ 
   --subject-cover 70 \
   --query-cover 70
-
-For DmdA_like, DddK, MddH, and TpMMT, a set of previously identified non-homologous was included as negative reference sequences in the BLASTP search to help distinguish true hits from closely related non-target genes.
 ```
 > ⚠️ **Note:** DmdA was first identified in Ruegeria pomeroyi (https://www.science.org/doi/10.1126/science.1130657) and is assigned to K17486. More recently, functional dmdA_like genes have been reported in SAR92 (https://journals.asm.org/doi/10.1128/mbio.01467-23), as well as in Vibrio and Psychrobacter (https://journals.asm.org/doi/10.1128/aem.01806-21). The SAR92 dmdA_like sequences cannot be annotated by BlastKOALA, whereas the dmdA_like genes from Vibrio and Psychrobacter are assigned to K00605 (gcvT / AMT, glycine cleavage system T protein, aminomethyltransferase). Additionally, between the canonical DmdA clade and these newly reported dmdA-like sequences, the phylogenetic tree contains several previously described non-dmdA genes. These together indicate these newly reported dmdA_like sequences are substantially diverged from the canonical Ruegeria DmdA. Therefore, individual BLASTP screening are applied for these dmdA_like genes.
 
