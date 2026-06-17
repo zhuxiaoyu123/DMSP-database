@@ -10,7 +10,8 @@ If you use this database, please cite: Predicted shifts in bacterial and algal c
 
 <br>
 
-<img width="1000" height="700" alt="image" src="https://github.com/user-attachments/assets/e3be72d1-d636-4105-8173-7331744688ef" />
+<img width="861" height="883.5" alt="image" src="https://github.com/user-attachments/assets/2af735ba-a180-4040-8122-c14c86b6c25e" />
+
 
 
 - **AcuH** is also known as **AcuK**.
