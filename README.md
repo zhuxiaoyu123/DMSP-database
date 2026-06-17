@@ -1,7 +1,7 @@
 # Database of DMSP/DMS/MeSH metabolism-related genes
 
 ## Citation
-If you use this database, please cite: Predicted shifts in bacterial and algal contributions to DMSP and DMS dynamics during a coastal spring–summer bloom, ISME J, 2026
+If you use this database, please cite: Predicted shifts in bacterial and algal contributions to DMSP and DMS dynamics during a coastal spring–summer bloom, The ISME Journal, 2026;, wrag141, https://doi.org/10.1093/ismejo/wrag141
 
 ## Enzymes involved in DMSP, DMS and MeSH metabolism
 <img width="1052" height="716" alt="image" src="https://github.com/user-attachments/assets/9a410f77-1a9f-4744-a422-91285e71595f" />
