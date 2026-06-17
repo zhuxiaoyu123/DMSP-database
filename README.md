@@ -97,7 +97,7 @@ diamond blastp \
 <br>
 <img width="668" height="315" alt="image" src="https://github.com/user-attachments/assets/e4d331af-9835-4bea-bb85-43521d8e5535" />
 
-<br>
+
 ## Gene relative abundance normalization
 When analysing metagenomic datasets, we typically normalize the abundance of DMSP-, DMS-, and MeSH-related genes against a set of 10 prokaryotic single-copy marker genes (08.hmm_profiles_of_10_bacterial_single_copy_genes) (https://www.nature.com/articles/s41467-019-08844-4). This normalization provides an estimate of the proportion of prokaryotic cells carrying a given gene within the community.
 
