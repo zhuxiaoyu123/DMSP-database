@@ -73,7 +73,7 @@ If you use this database, please cite: Predicted shifts in bacterial and algal c
 | DMS to CH4 | mtsH | prokaryotic | custom database |
 
 Genes assigned with KEGG Orthology (KO) categories (05.kegg_KO_list) are annotated by the online KEGG server [BlastKOALA](https://www.kegg.jp/blastkoala/)
- or the local tool [kofam_scan](https://github.com/takaram/kofam_scan).For these genes, we also provide reference protein sequences, which can be used for rapid homology searches in your own datasets. <br>
+ or the local tool [kofam_scan](https://github.com/takaram/kofam_scan). For these genes, we also provide reference protein sequences, which can be used for rapid homology searches in your own datasets. <br>
  > ⚠️ **Note:** BlastKOALA has a better performance on fragemented proteins, which are commonly found in metatranscriptomes.
 
 
