@@ -1,4 +1,5 @@
 # Database of DMSP/DMS/MeSH metabolism-related genes
+Dimethylsulfoniopropionate (DMSP) is a major organosulfur compound in marine and coastal environments, playing central roles in microbial physiology, biogeochemical cycling and climate regulation through its degradation to the climate-active gases dimethyl sulfide (DMS) and methanethiol (MeSH). 
 
 ## Citation
 If you use this database, please cite: Predicted shifts in bacterial and algal contributions to DMSP and DMS dynamics during a coastal spring–summer bloom, The ISME Journal, 2026;, wrag141, https://doi.org/10.1093/ismejo/wrag141
