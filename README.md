@@ -62,7 +62,7 @@ If you use this database, please cite: Predicted shifts in bacterial and algal c
 | DMS to DMSO | ddhABC | prokaryotic | K16964 (ddhA) |
 | DMS to DMSO | tmm | prokaryotic | K18277 |
 | DMS to DMSO | dsoABCDEF | prokaryotic | custom database (dsoB) |
-| DMS to MeSH | dmoA | prokaryotic | K16967 |
+| DMS to MeSH | dmoAB | prokaryotic | K16967 (dmoA) |
 | MeSH to S | mtoX | prokaryotic | K17285 |
 | MeSH to DMS | mddA | prokaryotic and eukaryotic | K21310 |
 | MeSH to DMS | mddH | prokaryotic | custom database |
