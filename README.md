@@ -86,7 +86,7 @@ The remaining genes are identified by blasting against custom databases built wi
 diamond blastp \
   --db Diamond_reference_proteins.dmnd \
   --query nonredundant_genes.faa \
-  --out dddK.id40_cov70.out \
+  --out diamond.id40_cov70.out \
   --outfmt 6 \
   --max-target-seqs 1 \
   --id 40 \ 
